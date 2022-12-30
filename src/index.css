@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  width: 100%;
+  border-radius: 7px;
+}
+
+@media (width >=600px) {
+  #wrapper{
+      width: 50%; 
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+      margin-top: 3em;
+  } 
+      
+}
+div>h3{
+  color: rgb(6, 6, 68);
+  font-weight: bold;
+}
+div>h6{
+  font-weight: bolder;
+}
+div>h6:hover{
+  color: blue !important;
+  cursor: pointer;
+}
+.active-notf{
+  background-color: #f2f5f5;
+  border-radius: 7px;
+}
+.active-notf:hover{
+  background-color: transparent;
+  border: 1px solid #f2f5f5;
+}
+.usernames{
+  text-decoration: none;
+  color: black;
+
+}
+.notf-text{
+  font-size: smaller;
+}
+.notf-link{
+  text-decoration: none;
+  font-weight: 500;
+  color: grey;
+  font-size: 14px;
+}
+.notf-link:hover, .usernames:hover{
+  color: blue;
+}
+.notf-badge::after{
+  content: " ";
+  border-radius: 50%;
+  background-color: red;
+  padding: 2px;
+  font-size: 1px;
+  position: relative;
+  bottom: 5px;
+  left: 8px;
+}
+.notf-time{
+  font-size: smaller;
+  color: grey;
+}
+
+.message{
+  position: relative;
+  left: 60px;
+  background-color: rgb(245, 245, 245);
+  width: 75%;
+  padding: 12px;
+  border-radius: 7px;
+}
+.message>p{
+  line-height: 17px;
+  font-size: 15px;
+  color: grey;
+}
+.msg{
+  cursor: pointer;
+}
+.diplayMessage{
+  display: block
+}
+.dontDisplayMessage{
+  display: none;
+}
+
+.notf-img{
+  position: relative;
+  left: 100px;
+  /* display: none; */
+}
+@media (width >= 600px){
+  .notf-img{
+      left: 200px
+  }
+}
+.avatar:hover .notf-img{
+  display: inline;
+}
